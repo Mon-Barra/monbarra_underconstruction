@@ -1,0 +1,15 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  monbarra-underconstruction:
+    container_name: monbarra-underconstruction
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 4000:4000
+    network_mode: host
+    
