@@ -5,9 +5,10 @@ services:
 
   monbarra-underconstruction:
     container_name: monbarra-underconstruction
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: monbarra-underconstruction:0.0.1
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
     restart: always
     ports:
       - 4000:4000
